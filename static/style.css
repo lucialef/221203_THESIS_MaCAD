@@ -1,0 +1,188 @@
+body,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+h1,h2,button,input {font-family: "Silkscreen", sans-serif}
+
+body {
+ margin: 0;
+ padding: 0;
+ color: black;
+}
+
+h1{
+ text-align: center;
+}
+
+.data {
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ width: 20%;
+ height: 97%;
+ background-color: rgb(26, 188, 156);
+}
+
+#map {
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ width: 80%;
+ height: 97%;
+}
+
+
+#title1 {
+ margin-top: 10px;
+ margin-left: 10px;
+ margin-bottom: 12px;
+ max-width: 100%;
+ text-align: left;
+ font-size: 36pt;
+ line-height: 0.7;
+ color: white;
+}
+
+#title1:hover{
+ color: crimson;
+}
+
+#title2 {
+ margin-left: 15px;
+ margin-right: 18px;
+ margin-bottom: 8px;
+ max-width: 100%;
+ text-align: right;
+ color: white;
+ /* font-family: monospace; */
+ font-weight: bold;
+ font-size: 14pt;
+ letter-spacing: .3px;
+ line-height: 1;
+}
+
+#title2:hover{
+ color: crimson;
+}
+
+#text {
+ margin-left: 15px;
+ margin-right: 18px;
+ max-width: 100%;
+ text-align: justify;
+ color: white;
+ /* font-family: monospace; */
+ font-weight: normal;
+ font-size: 10pt;
+ letter-spacing: .3px;
+ line-height: 1;
+}
+
+.coord {
+ position: absolute;
+ width: 100%;
+ margin-bottom: 10px;
+ margin-right: 20px;
+ bottom: 10px;
+ left: 0;
+}
+
+.footer {
+ position: fixed;
+ bottom: 0px;
+ width: 100%;
+ height: 3%;
+ z-index: 1;
+ color: rgb(255, 255, 255);
+ font-family: monospace;
+ font-weight: bold;
+ font-size: 8pt;
+ letter-spacing: 1px;
+ line-height: 0;
+}
+
+#footer {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: #333;
+ box-shadow: 0px 0px 3px 0px rgba(51, 51, 51, 0.5);
+}
+  
+li {
+ float: left;
+}
+
+li a {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+
+.map-overlay {
+    position: relative;
+    width: 100%;
+    margin-top: 7px;
+    margin-left: 15px;
+    margin-right: 20px;
+    top: 20;
+    left: 0;
+    /* padding: 10px; */
+}
+
+.map-overlay .map-overlay-inner {
+    max-width: 83%;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    margin-right: 20px; 
+}
+
+.map-overlay h2 {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    line-height: 12px;
+    display: block;
+    margin: 0 0 0px;
+}
+
+.map-overlay input {
+    background-color: transparent;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    cursor: ew-resize;
+}
+
+#month {
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 8pt;
+    color: #333;
+}
+
+#slider {
+    appearance: none;
+    height: 12px; 
+    background: rgb(26, 188, 156) ; 
+    outline: none; 
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+#slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px; 
+    height: 12px; 
+    background: #333; 
+    cursor: pointer; 
+}
+
+#slider:hover{
+    background: crimson;
+}
